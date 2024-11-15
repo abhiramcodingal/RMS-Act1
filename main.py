@@ -66,7 +66,7 @@ class Rest_manag:
             quantity = entry.get()
             if quantity.isdigit():
                 quantity = int(quantity)
-                price = self.menu_quantities[item] * rate
+                price = self.menu_items[item] * rate
                 cost = quantity * price
                 total_cost += cost
                 if quantity > 0:
